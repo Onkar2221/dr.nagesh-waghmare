@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo */
+
+.setht-width {
+  height: 6rem;
+  width: 25rem;
+}
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ae1010;
+}
+.nav-link {
+  font-family: "Oswald", sans-serif;
+}
+.markdown {
+  font-size: 0.75em;
+  color: cadetblue;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item:hover {
+  color: #ae1010;
+}
+
+/* About Dr section */
+
+.shadow {
+  box-shadow: 10px 10px 0px 0px rgb(11 116 128 / 70%) !important;
+}
+.dr-info {
+  font-family: sans-serif;
+}
+.text-red {
+  color: #ae1010;
+  font-family: sans-serif;
+}
+
+.info {
+  font-family: "Poppins", sans-serif;
+}
+.setbtn {
+  border: 2px solid;
+  border-color: #ae1010;
+  border-radius: 5rem;
+  border-width: 5px;
+}
+
+/* Card section */
+
+.bg-blue {
+  background-color: #4abfd1;
+}
+.card {
+  width: 22rem;
+}
+
+.card-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 3rem;
+  color: #064a54;
+}
+.card-paragraph {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 7rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ffeaea;
+  color: #006774;
+}
+.setbtn:hover {
+  background-color: #bc2323;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.red-arrow {
+  color: #ae1010;
+}
+.text-color:hover {
+  color: #ae1010;
+}
+.text-color {
+  color: black;
+}
+
+/* seven circular img section */
+.circle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+.seven-circle {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-color: #ae1010;
+  border-radius: 50%;
+  border-width: 4px;
+}
+.seven-img {
+  height: 16rem;
+  width: 18rem;
+}
+.icon {
+  position: relative;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.imgBx {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(calc(360deg / 7 * var(--i)));
+  transform-origin: 340px;
+  z-index: 100;
+  overflow: hidden;
+}
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes borderAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.seven-circle::before {
+  content: "";
+  position: absolute;
+  top: -2px; /* Adjust position to fit the border within the circle */
+  left: -2px; /* Adjust position to fit the border within the circle */
+  width: 100%; /* Adjust size to fit the circle */
+  height: 100%; /* Adjust size to fit the circle */
+  border: 2px dashed #ae1010; /* Border style */
+  border-radius: 50%; /* Ensure the border is circular */
+  animation: borderAnimation 10s linear infinite; /* Adjust animation duration as needed */
+  z-index: 0; /* Ensure the border is behind other elements */
+  border-width: 4px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50%;
+}
+.bg-img {
+  background-image: url(./assets/healthy-heart-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-onvideo {
+  background-image: url(./assets/sddefault.jpg);
+}
+.video-mt {
+  margin-top: 8rem;
+}
+.first-video,
+.third-video {
+  margin-right: 52px;
+}
+.second-video,
+.second-video {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Subfooter */
+.subfooter {
+  background-color: #3da5b5;
+}

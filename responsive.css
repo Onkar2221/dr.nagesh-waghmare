@@ -1,0 +1,61 @@
+@media screen and (max-width: 1400px) {
+  .first-video,
+  .third-video {
+    margin-right: 95px;
+  }
+
+  .card {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .card {
+    width: 16rem;
+  }
+  .first-video,
+  .second-video,
+  .third-video,
+  .fourth-video {
+    margin-left: 134px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .first-video,
+  .second-video,
+  .third-video,
+  .fourth-video {
+    margin-left: 134px;
+  }
+  .card {
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dr-name {
+    margin-top: 3rem;
+  }
+  .service,
+  .card {
+    margin-left: 122px;
+  }
+  .sm-ml {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .service,
+  .card {
+    margin-left: 100px;
+  }
+  .sm-ml {
+    margin-left: 106px;
+  }
+  .first-video,
+  .second-video,
+  .third-video,
+  .fourth-video {
+    margin-left: 90px;
+  }
+}
